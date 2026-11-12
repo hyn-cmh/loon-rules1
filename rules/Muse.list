@@ -1,0 +1,24 @@
+# ============================================================
+# Muse Rules for Loon
+# 服务: Muse (Meta 个人智能体) / Meta AI
+# 维护: 由 Muse 代理维护，托管于 GitHub 仓库 hyn-cmh/loon-rules1
+# 版本: v1 (2026-11-12)
+# 说明: 本文件为 Loon 远程规则集(Remote Rule)，本身不带策略；
+#       订阅时在 Loon 中为它指定策略(如 PROXY 或你的策略组名)。
+# 域名依据: Muse 官方文档与实际连接流程中出现的域名，
+#       后续可根据 Loon 请求日志中未命中的域名持续补充。
+# ============================================================
+
+# Muse 网页版与应用主域名 (muse.ai)
+DOMAIN-SUFFIX,muse.ai
+
+# Meta AI 域名 (含 agent.meta.ai 连接器与授权回调、www.meta.ai 等)
+DOMAIN-SUFFIX,meta.ai
+
+# Meta 官方站点中与 Muse 相关的具体主机
+# ai.meta.com: Muse Mac 应用下载、开发者文档
+DOMAIN,ai.meta.com
+# www.meta.com: Muse 订阅与帮助页面
+DOMAIN,www.meta.com
+# accountscenter.meta.com: 账号与安全设置(双重验证等)
+DOMAIN,accountscenter.meta.com
