@@ -1,0 +1,25 @@
+# ============================================================
+# Pixiv Rules for Loon
+# 服务: Pixiv (P站) 网页版与 App
+# 维护: 由 Muse 代理维护，托管于 GitHub 仓库 hyn-cmh/loon-rules1
+# 版本: v1 (2026-11-18)
+# 说明: 本文件为 Loon 远程规则集(Remote Rule)，本身不带策略；
+#       订阅时在 Loon 中为它指定策略(建议日本节点策略组)。
+# 注意: pximg.net 是图片 CDN，漏了它会出现正文能开、图片全裂。
+# ============================================================
+
+# Pixiv 主站与 App 接口
+DOMAIN-SUFFIX,pixiv.net
+
+# 图片 CDN (作品图片、头像、漫画页全走这里)
+DOMAIN-SUFFIX,pximg.net
+
+# 周边服务
+# Sketch 速写社区
+DOMAIN-SUFFIX,pixivsketch.net
+# 短链接
+DOMAIN-SUFFIX,pixiv.me
+# pixivision 特辑站
+DOMAIN-SUFFIX,pixivision.net
+
+# 账号、支付、工厂等子域都包含在 pixiv.net 后缀内，无需单列
